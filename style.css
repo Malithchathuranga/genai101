@@ -1,31 +1,79 @@
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F5F5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6A82FB, #FC5C7D); /* Gradient Background */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: #333;
 }
 
+/* Container Styling */
 .container {
-    text-align: center;
     background-color: #FFFFFF;
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 3em;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+.container:hover {
+    transform: translateY(-10px); /* Hover effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
 h1 {
-    color: #00BFA6;
+    font-size: 2.5em;
+    color: #FC5C7D; /* Soft pinkish color */
+    margin-bottom: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
+/* Button Styling */
 button {
-    background-color: #FF6B6B;
-    color: #FFFFFF;
+    background-color: #6A82FB;
+    color: white;
     border: none;
-    padding: 1em 2em;
-    border-radius: 5px;
+    padding: 1.2em 2.5em;
+    border-radius: 30px; /* Rounded button */
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 2em;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #FC5C7D; /* Soft transition on hover */
+    transform: translateY(-5px);
+}
+
+button:active {
+    transform: translateY(2px); /* Slight press effect */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        padding: 1em 2em;
+        font-size: 1em;
+    }
+}
+: 5px;
     cursor: pointer;
     font-size: 1em;
     margin-top: 1em;
